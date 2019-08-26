@@ -11,7 +11,7 @@ dataset = pd.read_csv("../../Datasets/Simple_Liner_Regression/Salary_Data.csv")
 X= dataset.iloc[:,:-1].values
 Y= dataset.iloc[:,-1].values
 print(X.shape)
-print(Y)
+print(Y.shape)
 #Splitting data in to testing and traning set
 X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=0.2,random_state=0)
 
