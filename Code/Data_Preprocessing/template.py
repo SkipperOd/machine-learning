@@ -29,3 +29,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=0.2,random_sta
 standardscaler_x = StandardScaler()
 X_train = standardscaler_x.fit_transform(X_train)
 X_test = standardscaler_x.transform(X_test)
+
+
+#for writing code in csv
+# df.to_csv(file_name, sep='\t')
