@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 Data consisting of salary with relation to number of experience in years
 '''
 #Importing dataset and converting it in X and Y
-dataset = pd.read_csv("../../Datasets/Simple_Liner_Regression/Salary_Data.csv")
+dataset = pd.read_csv("../../../Datasets/Simple_Liner_Regression/Salary_Data.csv")
 X= dataset.iloc[:,:-1].values
 Y= dataset.iloc[:,-1].values
 print(X.shape)

@@ -5,7 +5,7 @@ from sklearn.preprocessing import Imputer,LabelEncoder,OneHotEncoder,StandardSca
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 #importing data
-dataset = pd.read_csv("../../Datasets/Multiple_Linear_Regression/50_Startups.csv")
+dataset = pd.read_csv("../../../Datasets/Multiple_Linear_Regression/50_Startups.csv")
 X = dataset.iloc[:,:-1].values
 Y= dataset.iloc[:,-1:].values
 
