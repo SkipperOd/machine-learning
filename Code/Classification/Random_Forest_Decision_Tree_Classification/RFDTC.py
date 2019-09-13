@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.preprocessing import Imputer, LabelEncoder, OneHotEncoder, StandardScaler
 from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix
 
 # importing data
@@ -22,8 +22,8 @@ standardscaler_x = StandardScaler()
 X_train = standardscaler_x.fit_transform(X_train)
 X_test = standardscaler_x.transform(X_test)
 
-# we can change criterion to see different results.
-classifier = DecisionTreeClassifier(criterion="entropy",random_state=0)
+
+classifier = RandomForestClassifier(random_state=0,criterion="entropy",n_estimators=10)
 classifier.fit(X_train,Y_train)
 
 score = classifier.score(X_test, Y_test)

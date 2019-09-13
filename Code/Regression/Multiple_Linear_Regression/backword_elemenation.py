@@ -5,7 +5,7 @@ from sklearn.preprocessing import Imputer,LabelEncoder,OneHotEncoder,StandardSca
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 #importing data
-dataset = pd.read_csv("../../Datasets/Multiple_Linear_Regression/50_Startups.csv")
+dataset = pd.read_csv("../../../Datasets/Multiple_Linear_Regression/50_Startups.csv")
 X = dataset.iloc[:,:-1].values
 Y= dataset.iloc[:,-1:].values
 
@@ -44,7 +44,7 @@ import statsmodels.formula.api as sm
 X = np.append(arr=np.ones((50,1)).astype(int),values=X,axis=1)
 X_opt = X[:,[0,1,2,3,4]]
 regression_OLS=sm.OLS(endog=Y,exog=X_opt).fit()
-# print(regression_OLS.summary())
+print(regression_OLS.summary())
 
 X_opt = X[:,[0,1,3,4]]
 regression_OLS=sm.OLS(endog=Y,exog=X_opt).fit()

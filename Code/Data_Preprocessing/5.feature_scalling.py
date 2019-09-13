@@ -5,7 +5,7 @@ from sklearn.preprocessing import Imputer,LabelEncoder,OneHotEncoder
 from sklearn.model_selection import train_test_split
 '''
 Feature scaling is a method used to normalize the range of independent variables.
-Since the range of values of raw data varies widely, it causes to machine learning model to work properly with out feature scalling/normalization
+Since the range of values of raw data varies widely, it causes machine learning model to work properly with out feature scalling/normalization
 many classifiers calculate the distance between two points by the Euclidean distance. 
 If one of the features has a broad range of values, the distance will be governed by this particular feature.
 Therefore, the range of all features should be normalized so that each feature contributes approximately proportionately to the final distance.
