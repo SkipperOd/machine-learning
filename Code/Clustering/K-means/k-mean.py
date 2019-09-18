@@ -37,8 +37,6 @@ y_pred=kmean.fit_predict(X)
 print(y_pred)
 
 # Plotting clusters
-
-
 plt.scatter(X[y_pred==0,0],X[y_pred==0,1],s=100,c='red',label="1")
 plt.scatter(X[y_pred==1,0],X[y_pred==1,1],s=100,c='green',label="2")
 plt.scatter(X[y_pred==2,0],X[y_pred==2,1],s=100,c='blue',label="3")
